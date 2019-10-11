@@ -1,1 +1,41 @@
 // Navigation code here
+nav {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    h1 {
+        font-size: 3.2rem;
+        padding: 1% 0 0 0;
+
+        @media @phone {
+            padding: 3% 0;
+        }
+    }
+    div {
+        display: flex;
+        justify-content: space-evenly;
+        width: 20%;
+        padding: 1% 0;
+        
+        @media @phone {
+            .navmobile(90%, space-evely);
+            
+        }
+        a {
+            font-size: 1.4rem;
+            color: black;
+            text-decoration: none;
+            @media @phone {
+                font-size: 1.6rem;
+                padding-bottom: 2%;
+            }
+            &:visited {
+                color: black;
+            }
+        }
+    }
+    
+}

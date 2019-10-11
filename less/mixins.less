@@ -1,1 +1,23 @@
 // Mixins Here
+.buttonshtoyle(@bgcolor, @textcolor, @width, @fontsize, @paddingvertical) {
+    background-color: @bgcolor;
+    color: @textcolor;
+    width: @width;
+    font-size: @fontsize;
+    padding: @paddingvertical 0;
+    border-radius: 4px;
+    border: 0.5px solid black;
+    text-align: center;
+        
+    &:hover {
+        cursor: pointer;
+        background-color: @textcolor;
+        color: @bgcolor;
+        border: 0.5px solid black;
+    }
+}
+
+.navmobile(@width, @justifycontent){
+    width: @width;
+    justify-content: @justifycontent;
+}
