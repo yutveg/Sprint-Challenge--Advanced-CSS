@@ -68,14 +68,25 @@
     justify-content: center;
 
     @media @phone {
-      
+      margin-top: 5%;
+      flex-flow: column-reverse nowrap;
+      align-items: center;
+      padding: 4%;
     }
 
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 100%;
+        margin: 0 auto;
+      }
+
       h3 {
         margin-bottom: 10px;
+        @media @phone {
+          padding-top: 4%;
+        }
       }
 
       p {
@@ -83,7 +94,11 @@
       }
 
       .btn {
-        .buttonshtoyle(@btn-bg-color, white);
+        .buttonshtoyle(@btn-bg-color, white, 24%, 1.7rem, 2%);
+
+        @media @phone {
+          .buttonshtoyle(@btn-bg-color, white, 100%, 1.7rem, 5%);
+        }
       }
     }
 
@@ -91,6 +106,11 @@
       width: 46%;
       margin-left: 4%;
       
+      @media @phone {
+        width: 100%;
+        margin: 0 auto;
+      }
+
       img {
         width: 100%;
         height: auto;
